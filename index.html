@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 style="color:red"><center>Admission form of a Student</center></h1>
+<form method="POST" action="{{url_for('predict')}}" target="_blank">
+    <center><div id="form_" style="height:400px;width:400px;align:center;border:5px solid gray;padding:10px;background-color:aqua">
+     <div style="height=50px;width:300px;margin:10px">
+    <label for="gre">GRE&nbsp;&nbsp;&nbsp;</label>
+         <input style="width:225px;height:25px" type="number" id="gre" name="gre" placeholder="enter the gre score" min="200" max="800" required>
+   </div>
+    <br/>
+        <div style="height=50px;width:300px;margin:10px">
+    <label for="gpa">GPA&nbsp;&nbsp;&nbsp;</label>
+         <input style="width:225px;height:25px" type="number" id="gpa" name="gpa" placeholder="enter the gpa" min="0" max="4" step="0.01"  required>
+   </div>
+        <br/>
+    <div style="height=50px;width:300px;margin:10px">
+    <label for="rank">RANK</label>
+         <input style="width:225px;height:25px" type="number" id="rank" name="rank" placeholder="enter rank" min="1" max="4" required>
+   </div>
+        <br/>
+        <input type="submit" style="width:75px;height:25px;background-color:lightgray;color:red">
+    </div></center>
+</form>
+
+
+</body>
+</html>
